@@ -8,11 +8,11 @@ pipeline{
             }
         }
         
-        stage('MVN Package'){
-            steps{
-                sh 'mvn clean package'
+       stage('Mvn Build'){
+                steps{
+                    sh 'mvn clean package'
+                }
             }
-        }
         
         stage('Tomcat Deploy'){
             steps{
