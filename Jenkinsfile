@@ -4,7 +4,7 @@ pipeline{
         stage('SCM'){
             steps{
                 //git commit/pull
-                git credentialsId: 'github', url: 'https://github.com/javahometech/my-app'
+                git credentialsId: 'github', url: 'https://github.com/shabana613/javahome-myapp'
             }
         }
         
