@@ -10,7 +10,8 @@ pipeline{
         
         stage('MVN Package'){
             steps{
-                sh 'mvn clean package'
+             //   sh 'mvn clean package'
+                echo 'MAVEN SKIPPED'
             }
         }
         
