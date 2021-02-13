@@ -19,9 +19,9 @@ pipeline{
                 sh 'mv target/myweb*.war target/myweb.war'
                 sshagent(credentials: ['slave-two-linux'], ignoreMissing: true) {
                 // some block
-                    sh "scp -o StrictHostKeyChecking=no target/myweb*.war ec2-user@172.31.45.122:/opt/tomcat8/webapps/myweb.war"
-                    sh "ssh ec2-user@172.31.45.122 /opt/tomcat8/bin/startup.sh"
-                    sh "ssh ec2-user@172.31.45.122 /opt/tomcat8/bin/shutdow.sh"       
+                    sh "scp -o StrictHostKeyChecking=no target/myweb*.war ec2-user@172.31.32.133:/opt/tomcat8/webapps/myweb.war"
+                    sh "ssh ec2-user@172.31.32.133 /opt/tomcat8/bin/startup.sh"
+                    sh "ssh ec2-user@172.31.32.133 /opt/tomcat8/bin/shutdow.sh"       
 
                   }
 
